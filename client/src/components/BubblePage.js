@@ -11,7 +11,7 @@ const BubblePage = ({ colors, getColors, isFetching }) => {
   useEffect(() => {
     getColors();
     setColorList(colors);
-  }, [colors]);
+  }, [getColors, colors]);
 
   return (
     <>
